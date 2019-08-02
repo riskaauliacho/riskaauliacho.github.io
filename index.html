@@ -16,7 +16,7 @@
         <!-- End Description-->
 
         <!--Start CSS-->
-        <link rel="stylesheet" href="produk/skincare.css">
+        <link rel="stylesheet" href="style/skincare.css">
         <!--End CSS-->  
 
         <!--Start JS-->
@@ -24,6 +24,23 @@
         <!--End JS-->
 
     </head>
+
+        <!-- WhatsHelp.io widget -->
+        <script type="text/javascript">
+            (function () {
+                var options = {
+                    whatsapp: "+62823211107", // WhatsApp number
+                    call_to_action: "Message us", // Call to action
+                    position: "right", // Position may be 'right' or 'left'
+                };
+                var proto = document.location.protocol, host ="whatshelp.io", url = proto + "//static." + host;
+                var s = document.createElement('script'); s.type ='text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+        </script>
+        <!-- /WhatsHelp.io widget -->
+
     <body id="home">
         <ul class="nav-list text-center effect">
             <li class="active">
@@ -53,64 +70,83 @@
 
         <!-- Start Menu Primer -->
         <div class="container menu-primer">
-            <div class="dropdown">
-                <a href="#" title="allproduct">Product</a>
-                <a href="#" title="allproduct">All Product</a>
-                <button class="dropbtn">Skincare</button>
-                    <div class="dropdown-content">
-                        <a href="#" title="Serum">serum</a>
-                        <a href="#" title="Essence">Essence</a>
-                        <a href="#" title="Cleanser">Cleanser</a>
-                    </div>
-                <button class="dropbtn">Face</button>
-                    <div class="dropdown-content">
-                        <a href="#" title="Cushion">serum</a>
-                        <a href="#" title="Blusher">Essence</a>
-                        <a href="#" title="Foundation">Cleanser</a>
-                    </div>
-                <button class="dropbtn">Lips</button>
-                    <div class="dropdown-content">
-                        <a href="#" title="Cushion">serum</a>
-                        <a href="#" title="Blusher">Essence</a>
-                        <a href="#" title="Foundation">Cleanser</a>
-                    </div>
-                <button class="dropbtn">Eyes</button>
-                    <div class="dropdown-content">
-                        <a href="#" title="Cushion">serum</a>
-                        <a href="#" title="Blusher">Essence</a>
-                        <a href="#" title="Foundation">Cleanser</a>
-                    </div>
-                <button class="dropbtn">Bodycare</button>
-                    <div class="dropdown-content">
-                        <a href="#" title="Cushion">serum</a>
-                        <a href="#" title="Blusher">Essence</a>
-                        <a href="#" title="Foundation">Cleanser</a>
-                    </div>
-            </div>
+            <ul>
+                <li>
+                    <a href="allproduct.html"title="Home class">All Product</a>
+                </li>
+                <li>
+                    <a href="newarrival.html" title="New Arrival">New Arrival</a>
+                </li>
+                <li>
+                    <a href="skincare.html" title="Skincare">Skincare</a>
+                </li>
+                <li>
+                    <a href="face.html" title="Face">Face</a>
+                </li>
+                <li>
+                    <a href="lips.html" title="Lips">Lips</a>
+                </li>
+                <li>
+                    <a href="eyes.html" title="Eyes">Eyes</a>
+                </li>
+                <li>
+                    <a href="bodycare.html" title="Bodycare">Bodycare</a>
+                </li>
+            </ul>
         </div>
         <!-- End Menu Primer -->
 
         <!-- Start Jumbotron-->
         <div class="container">
-            <figure class="snip1584"><img src="https://d1gnt0aflnpn8l.cloudfront.net/wysiwyg/Sub-Banner-Slider/0719-FORENCOS-pH5-5EfficacyTonerMist-subbanner.jpg" alt="sample87"/>
-                <figcaption>
-                <h3>Toner Mist</h3>
-                <h5>Forencos</h5>
-                </figcaption><a href="#"></a>
-            </figure>
-            <figure class="snip1584"><img src="https://d1gnt0aflnpn8l.cloudfront.net/wysiwyg/Sub-Banner-Slider/0519-altheaexclusivebrand-subbanner-01.jpg" alt="sample119"/>
-                <figcaption>
-                <h3>Exclusive Brand</h3>
-                <h5>Althea</h5>
-                </figcaption><a href="#"></a>
-            </figure>
-            <figure class="snip1584"><img src="https://d1gnt0aflnpn8l.cloudfront.net/wysiwyg/Sub-Banner-Slider/0519-Blog-LusciousLocksLoot-subbanner.jpg" alt="sample120"/>
-                <figcaption>
-                <h3>Locks Loot</h3>
-                <h5>Luscious/h5>
-                </figcaption><a href="#"></a>
-            </figure>
-        </div>
+                <figure class="snip1268">
+                    <div class="image">
+                        <img src="https://d1gnt0aflnpn8l.cloudfront.net/wysiwyg/Sub-Banner-Slider/0719-FORENCOS-pH5-5EfficacyTonerMist-subbanner.jpg" alt="sq-sample4"/>
+                        <div class="icons">
+                            <a href="#"><i class="ion-star"></i></a>
+                            <a href="#"><i class="ion-share"></i></a>
+                            <a href="#"><i class="ion-search"></i></a>
+                          </div>
+                          <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                        <figcaption>
+                          <h2>Denim Shirt</h2>
+                          <p>My family is dysfunctional and my parents won't empower me. Consequently I'm not self actualized its ok.</p>
+                          <div class="price">$65.00 </div>
+                        </figcaption>
+                      </figure>
+                <figure class="snip1268">
+                    <div class="image">
+                        <img src="https://d1gnt0aflnpn8l.cloudfront.net/wysiwyg/Sub-Banner-Slider/0519-altheaexclusivebrand-subbanner-01.jpg" alt="sq-sample17"/>
+                          <div class="icons">
+                            <a href="#"><i class="icons-star"></i></a>
+                            <a href="#"><i class="icons-share"></i></a>
+                            <a href="#"><i class="icons-search"></i></a>
+                        </div>
+                          <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                        <figcaption>
+                          <h2>Winter Clothes</h2>
+                          <p>If something is so complicated that you can't explain it in 10 seconds, then it's probably not worth knowing anyway.</p>
+                          <div class="price">$75.00 </div>
+                        </figcaption>
+                      </figure>
+                <figure class="snip1268">
+                    <div class="image">
+                        <img src="https://d1gnt0aflnpn8l.cloudfront.net/wysiwyg/Sub-Banner-Slider/0519-Blog-LusciousLocksLoot-subbanner.jpg" alt="sq-sample15"/>
+                          <div class="icons">
+                            <a href="#"><i class="ion-star"></i></a>
+                            <a href="#"><i class="ion-share"></i></a>
+                            <a href="#"><i class="ion-search"></i></a>
+                        </div>
+                          <a href="#" class="add-to-cart">Add to Cart</a>
+                        </div>
+                        <figcaption>
+                          <h2>Footwear</h2>
+                          <p>Miss Wormwood: What state do you live in? Calvin: Denial. Miss Wormwood: I don't suppose I can argue with that!</p>
+                          <div class="price">$195.00 </div>
+                        </figcaption>
+                    </figure>
+                </div> 
         <!-- End Jumbotron-->
 
     <!--Start Promo & Produk-->
