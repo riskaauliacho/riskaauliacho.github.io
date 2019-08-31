@@ -1,0 +1,48 @@
+<html>
+<body>
+    function getBio(){
+        return {
+            name : "Riska Aulia",
+            age : "25",
+            address : "Seumeureung, Sibreh. Aceh Besar",
+            hobbies : ["nonton","gambar","coding"],
+            is_married : false,
+            list_school : [{
+                highschool : "SMA Negeri 1 Lhokseumawe",
+                year_in : "2009",
+                year_out : "2012",
+                major : "IPA",
+            }, {
+                university : "Universitas Syiah Kuala"
+                year_in : "2012",
+                year_out : "2016",
+                major : "Ekonomi Pembangunan"
+            }],
+            skills : [{
+                skill_name : "HTML",
+                level : "beginner",
+            }, {
+                skill_name : "CSS",
+                level : "beginner", 
+            }, {
+                skill_name : "Java script"
+                level : "beginner",
+            }],
+            interest_in_coding : true,
+        }
+    }
+
+    let bio = getBio();
+
+    let skills = bio.skills;
+
+    let school = bio.school.highschool.university;
+
+    let {skills} = bio;
+
+    // print json yang telah di convert ke type String console.log(JSON.stringfy(skills));
+
+</body>
+</html>
+
+    
