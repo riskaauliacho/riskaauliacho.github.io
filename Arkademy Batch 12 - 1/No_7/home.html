@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Arkademy - Riska Aulia</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<div class="panel-heading">
+    <div class="row">
+        <div class="col-lg-1"><img src="image/logo.png"  height="75px" width="100px"></div>
+        <div class="col-lg-8"><br><h2>ARKADEMY BOOTCAMP</h2></div>
+    </div>
+</div>
+    <br>
+    <br>
+    <p>
+    <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#modalAdd" style="float: right;">ADD</button>
+    <br>
+    <table id="mytable" class="table table-bordered">
+        <thead>       
+            <th>Name</th>       
+            <th>Work</th>       
+            <th>Salary</th>       
+            <th>Action</th>     
+        </thead> 
+        <tr>       
+            <td>Rebecca</td>
+            <td>Frontend Dev</td>     
+            <td>Rp.10.000.000</td>     
+            <td>
+                <button type="button" class="btn btn-default btn-md" onclick="hapus()"><i class="fa fa-trash fa-sm"></i></button>
+                <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit fa-sm"></i></button>                
+            </td>   
+        </tr>
+        <tr>       
+            <td>Vita</td>
+            <td>Backend Dev</td>     
+            <td>Rp.12.000.000</td>     
+            <td>
+                <button type="button" class="btn btn-default btn-md" onclick="hapus()"><i class="fa fa-trash fa-sm"></i></button>
+                <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit fa-sm"></i></button>     
+            </td> 
+        </tr>
+        <tr>       
+            <td>Huda</td>
+            <td>Backend Dev</td>     
+            <td>Rp.12.000.000</td>     
+            <td>
+                <button type="button" class="btn btn-default btn-md" onclick="hapus()"><i class="fa fa-trash fa-sm"></i></button>
+                <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit fa-sm"></i></button>     
+            </td>
+        </tr>
+        <tr>       
+            <td>Kiky</td>
+            <td>Frontend Dev</td>     
+            <td>Rp.10.000.000</td>    
+            <td>
+                <button type="button" class="btn btn-default btn-md" onclick="hapus()"><i class="fa fa-trash fa-sm"></i></button>
+                <button type="button" class="btn btn-default btn-md" data-toggle="modal" data-target="#modalEdit"><i class="fa fa-edit fa-sm"></i></button>     
+            </td> 
+        </tr>
+    </table>
+</div>
+<div id="modalAdd" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">ADD DATA</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nameInput" placeholder="Name..." name="nama">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="workSelect" name="pekerjaan">
+                            <option value="">Work</option>
+                            <option value="Frontend">Frontend Dev</option>
+                            <option value="Backend">Backend Dev</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="salarySelect" name="gaji">
+                            <option>Salary</option>
+                            <option>Rp.10.000.000</option>
+                            <option>Rp.12.000.000</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success btn-md" onclick="tambah()">ADD</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="modalEdit" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">EDIT DATA</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nameInput" value="Rebbeca" name="nama">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="workSelect" name="pekerjaan">
+                            <option value="Frontend">Frontend Dev</option>
+                            <option value="Backend">Backend Dev</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control" id="salarySelect" name="gaji">
+                            <option>Rp.10.000.000</option>
+                            <option>Rp.12.000.000</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success btn-md" onclick="edit()">EDIT DATA</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+<script>
+    function hapus()
+    {
+        swal("Berhasil!", "Data Berhasil dihapus!", "success");
+    }
+    function tambah()
+    {
+        swal("Berhasil!", "Data Berhasil ditambahkan!", "success");
+    }
+    function edit()
+    {
+        swal("Berhasil!", "Data Berhasil diubah!", "success");
+    }
+</script>
+
+    © 2019 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    Pricing
